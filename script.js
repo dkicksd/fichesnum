@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addNote(title, content) {
         const div = document.createElement('div');
-        div.className = 'note';
+        div.className = 'note bg-white shadow rounded p-4 my-2';
         div.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
         notesSection.appendChild(div);
     }
