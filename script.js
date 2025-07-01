@@ -30,6 +30,42 @@ document.addEventListener('DOMContentLoaded', () => {
         div.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
         notesSection.appendChild(div);
     }
+
+    // Password visibility toggle
+    document.querySelectorAll('.toggle-password').forEach(icon => {
+        icon.addEventListener('click', () => {
+            const input = icon.previousElementSibling;
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.replace('fa-eye-slash', 'fa-eye');
+            }
+        });
+    });
+
+    // Registration form validation
+    const signupForm = document.getElementById('signup-form');
+    if (signupForm) {
+        signupForm.addEventListener('submit', (e) => {
+            const password = document.getElementById('password').value;
+            const confirm = document.getElementById('confirm_password').value;
+            const strength = document.getElementById('password-strength');
+            const strongRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$/;
+
+            if (!strongRegex.test(password)) {
+                e.preventDefault();
+                strength.textContent = "Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule, un chiffre et un symbole.";
+                return;
+            }
+
+            if (password !== confirm) {
+                e.preventDefault();
+                strength.textContent = "Les mots de passe ne correspondent pas.";
+            }
+        });
+    }
 });
         // Add to cart functionality
         document.querySelectorAll('.add-to-cart').forEach(button => {
