@@ -1,5 +1,5 @@
 <?php
-$isLoggedIn = !empty($_SESSION['user']);
+$isLoggedIn = isset($_SESSION['user']) && !empty($_SESSION['user']);
 ?>
 <nav class="bottom-nav">
     <div class="bottom-nav-content">

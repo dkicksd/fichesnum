@@ -1,5 +1,5 @@
 <?php
-$isLoggedIn = !empty($_SESSION['user']);
+$isLoggedIn = isset($_SESSION['user']) && !empty($_SESSION['user']);
 ?>
 <header>
     <div class="app-container">
