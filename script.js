@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Password visibility toggle
     document.querySelectorAll('.toggle-password').forEach(icon => {
         icon.addEventListener('click', () => {
-            const input = icon.previousElementSibling;
+            const input = icon.parentElement.querySelector('input');
             if (input.type === 'password') {
                 input.type = 'text';
                 icon.classList.replace('fa-eye', 'fa-eye-slash');
