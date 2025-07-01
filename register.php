@@ -1,6 +1,6 @@
 <?php
 session_start();
-$isLoggedIn = !empty($_SESSION['user']);
+$isLoggedIn = isset($_SESSION['user']) && !empty($_SESSION['user']);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
