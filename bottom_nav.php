@@ -1,7 +1,4 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
 $isLoggedIn = !empty($_SESSION['user']);
 ?>
 <nav class="bottom-nav">
