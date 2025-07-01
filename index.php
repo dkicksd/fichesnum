@@ -12,37 +12,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="app-container">
-            <div class="header-content">
-                <a href="#" class="logo">
-                    <i class="fas fa-book-open"></i>
-                    <span>fichesnum</span>
-                </a>
-                
-                <nav class="nav-menu">
-                    <a href="#"><i class="fas fa-home"></i> <span>Accueil</span></a>
-                    <a href="#"><i class="fas fa-th-large"></i> <span>Catégories</span></a>
-                    <a href="#"><i class="fas fa-fire"></i> <span>Nouveautés</span></a>
-                    <a href="#"><i class="fas fa-trophy"></i> <span>Best-sellers</span></a>
-                    <a href="#faq"><i class="fas fa-question-circle"></i> <span>FAQ</span></a>
-                </nav>
-                
-                <div class="nav-actions">
-                    <button class="icon-btn">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    <button class="icon-btn">
-                        <i class="fas fa-user"></i>
-                    </button>
-                    <button class="icon-btn">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">3</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php include 'header.php'; ?>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -407,30 +377,7 @@
     </footer>
 
     <!-- Bottom Navigation -->
-    <nav class="bottom-nav">
-        <div class="bottom-nav-content">
-            <a href="#" class="nav-item active">
-                <i class="fas fa-home"></i>
-                <span>Accueil</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fas fa-th-large"></i>
-                <span>Catégories</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fas fa-search"></i>
-                <span>Rechercher</span>
-            </a>
-            <a href="#" class="nav-item">
-                <i class="fas fa-shopping-cart"></i>
-                <span>Panier</span>
-            </a>
-            <a href="#faq" class="nav-item">
-                <i class="fas fa-question-circle"></i>
-                <span>FAQ</span>
-            </a>
-        </div>
-    </nav>
+    <?php include 'bottom_nav.php'; ?>
 
     <script src="script.js"></script>
 </body>
