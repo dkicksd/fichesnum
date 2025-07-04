@@ -225,13 +225,13 @@ $isLoggedIn = isset($_SESSION["user"]) && !empty($_SESSION["user"]);
   </style>
 </head>
 <body>
-<?php include 'header.php'; ?>
+<?php include __DIR__ . '/../header.php'; ?>
 <div class="ebook-container">
     <div id="progressBar" class="progress-bar"><div class="progress-bar-inner" id="progressInner"></div></div>
 
     <!-- Couverture -->
     <div class="cover" id="coverScreen">
-      <img src="assets/images/lepouvoirdufromage.png" alt="Cheese Cover">
+      <img src="../assets/images/lepouvoirdufromage.png" alt="Cheese Cover">
       <h1>Le Pouvoir du Fromage</h1>
       <p>L’ebook qui va révolutionner ta vision… du calcium 🧀<br>
       10 chapitres, 30 secrets, 1 destin !<br><span style="color:#4f8cff;font-weight:bold;">Clique pour commencer la dégustation !</span></p>
@@ -520,7 +520,8 @@ $isLoggedIn = isset($_SESSION["user"]) && !empty($_SESSION["user"]);
       userAnswers = Array(10).fill(null);
     }
   </script>
-<?php include 'bottom_nav.php'; ?>
-<script src="script.js"></script>
+<?php include __DIR__ . '/../footer.php'; ?>
+<?php include __DIR__ . '/../bottom_nav.php'; ?>
+<script src="../script.js"></script>
 </body>
 </html>
