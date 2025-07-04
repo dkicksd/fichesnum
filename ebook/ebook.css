@@ -56,9 +56,10 @@ body {
   box-shadow: 0 0.125rem 0.5rem var(--shadow);
 }
 
-.start-btn:hover {
+.start-btn:hover,
+.start-btn:active {
   background: var(--soft-purple);
-  color: var(--text-white);
+  color: var(--anthracite);
 }
 
 .progress-bar {
@@ -141,7 +142,7 @@ body {
 .subchapter-title {
   font-size: 1.15rem;
   margin: 1.375rem 0 0.5rem 0;
-  color: var(--soft-purple);
+  color: var(--trust-blue);
   font-weight: 600;
 }
 
@@ -172,9 +173,10 @@ body {
   pointer-events: none;
 }
 
-.nav-btn:hover {
+.nav-btn:hover,
+.nav-btn:active {
   background: var(--soft-purple);
-  color: var(--text-white);
+  color: var(--anthracite);
 }
 
 .toc-list {
@@ -192,8 +194,9 @@ body {
   transition: 0.2s;
 }
 
-.toc-list li.active, .toc-list li:hover {
-  color: var(--soft-purple);
+.toc-list li.active,
+.toc-list li:hover {
+  color: var(--trust-blue);
   font-weight: bold;
   background: var(--text-white);
   border-radius: 0.375rem;
@@ -213,6 +216,11 @@ body {
   transition: 0.15s;
 }
 
+.quiz-answers label:hover,
+.quiz-answers label:active {
+  background: color-mix(in srgb, var(--warm-yellow), transparent 40%);
+}
+
 .quiz-answers input[type="radio"] {
   margin-right: 0.5rem;
 }
@@ -230,7 +238,7 @@ body {
 
 .quiz-answers label.incorrect {
   background: var(--creative-orange);
-  color: var(--text-white);
+  color: var(--anthracite);
   font-weight: bold;
 }
 
@@ -239,7 +247,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   font-weight: bold;
-  color: var(--soft-purple);
+  color: var(--trust-blue);
 }
 
 @media (max-width: 700px) {
