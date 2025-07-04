@@ -26,7 +26,7 @@ $isLoggedIn = isset($_SESSION['user']) && !empty($_SESSION['user']);
                     <h1>Votre bibliothèque numérique premium</h1>
                     <p>Découvrez des milliers d'eBooks dans tous les domaines, disponibles en téléchargement immédiat. Connaissance, divertissement et expertise à portée de main.</p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn">Explorer la collection</a>
+                        <a href="collection.php" class="btn">Explorer la collection</a>
                         <a href="#" class="btn btn-accent">Voir les best-sellers</a>
                     </div>
                 </div>
