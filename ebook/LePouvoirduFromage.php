@@ -231,7 +231,7 @@ $isLoggedIn = isset($_SESSION["user"]) && !empty($_SESSION["user"]);
 
     <!-- Couverture -->
     <div class="cover" id="coverScreen">
-      <img src="https://cdn.pixabay.com/photo/2017/01/31/19/12/cheese-2028937_1280.png" alt="Cheese Cover">
+      <img src="assets/images/lepouvoirdufromage.png" alt="Cheese Cover">
       <h1>Le Pouvoir du Fromage</h1>
       <p>L’ebook qui va révolutionner ta vision… du calcium 🧀<br>
       10 chapitres, 30 secrets, 1 destin !<br><span style="color:#4f8cff;font-weight:bold;">Clique pour commencer la dégustation !</span></p>
